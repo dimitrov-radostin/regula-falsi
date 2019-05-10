@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>regula falsi</title>
+    <style>
+        #canvas {
+            margin: 20px;
+            background: rgb(211, 232, 238); 
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Regula Falsi </h1>
+    <h2>Choose a function</h2>
+    <select id="selectedFunction">
+        <option value="0">(x + 0.1) * (x - 0.3) - 0.3</option>
+        <option value="1">cos(x) - x</option>
+        <option value="2">0.5 - sin(x)</option>
+        <option value="3">cos(x) - x</option>
+    </select>
+
+    <h2>
+        Find zeros between
+        <input type="text" size="3" id="intervalLeft" value="0">
+        and 
+        <input type="text" size="3" id="intervalRight" value="1">        
+    </h2>
+    
+    <canvas id="canvas" width="650" height="500" >
+    </canvas> 
+
+    <script src="./main.js"></script>
+</body>
+</html>
